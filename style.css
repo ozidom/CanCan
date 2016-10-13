@@ -3,11 +3,33 @@ Theme Name: jqueryui-com
 Template: jquery
 */
 
+body {
+	padding-top: 140px;
+}
+}
+
 a,
 .title {
 	color: #b24926;
 }
 
+.navbar {
+	background-color: #2baaed;
+	color: #ffffff;
+	border: none;
+	box-shadow: 0 -8px 30px rgba(0,0,0,0.7);
+}
+.navbar-inverse .navbar-nav > .active > a {
+	background-color: rgba(255,255,255,0.2);
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a
+ {
+	color: white;
+}
 #content a:hover {
 	color: #333;
 }
@@ -134,6 +156,60 @@ a,
 	overflow: hidden;
 	display: none;
 }
+
+#gallery { min-height: 12em; z-index: 1; }
+.gallery.custom-state-active { background: #eee; }
+.gallery li {
+	float: left;
+	padding: 6px 12px;
+	margin-bottom: 20px;
+	text-align: center;
+	cursor: move;
+}
+.gallery .gallery-group {
+	padding: 0 0.4em 0.4em 0;
+}
+.gallery li h5 {
+	margin: 10px 0px;
+	padding: 6px 0px;
+	text-align: left;
+	background-color: #ffffff;
+	border: none;
+}
+.gallery li a { float: right; }
+.gallery li a.ui-icon-zoomin { float: left; }
+.gallery li img { width: 100%; height: auto; cursor: move; }
+.gallery .controls {
+	padding: 20px 0;
+}
+#trash {
+	background: url("images/dump-truck.png");
+	background-size: 1300px;
+	background-position: -30px -30px;
+	border: none;
+	height: 700px;
+	padding: 80px 40px 40px;
+	position: fixed;
+	top: 130px;
+	width: 50%;
+	z-index: 0;
+	overflow: hidden;
+}
+#trash h4 { line-height: 16px; margin: 0 0 0.4em;
+	background-color: transparent;;
+	border: none;
+	color: black;
+	font-size: 2.4em;
+	margin: 0px 0 0;
+	height: 40px;
+}
+#trash .gallery h5 { height: 40px;  }
+#trash li {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
 
 @media all and (max-width: 600px) {
 	#banner-secondary p.intro,
